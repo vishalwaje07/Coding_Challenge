@@ -1,5 +1,4 @@
 /* Write a program that takes a number 
-�
 N as the input, and prints it to the output.
 
 Input Format
@@ -13,7 +12,7 @@ Sample output: 123
 
 import java.util.*;
 
-class Number_Mirror {
+public class Number_Mirror {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Number Number");
