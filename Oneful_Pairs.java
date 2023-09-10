@@ -17,16 +17,17 @@ import java.util.*;
 
 public class Oneful_Pairs {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter value of first number");
-        int a = sc.nextInt();
-        System.out.println("Enter value of second number");
-        int b = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter value of first number");
+            int a = sc.nextInt();
+            System.out.println("Enter value of second number");
+            int b = sc.nextInt();
 
-        if (a + b + (a * b) == 111) {
-            System.out.println("Yes");
-        } else {
-            System.out.println("No");
+            if (a + b + (a * b) == 111) {
+                System.out.println("Yes");
+            } else {
+                System.out.println("No");
+            }
         }
     }
 }
