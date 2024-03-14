@@ -12,4 +12,4 @@ public class Vowel {
             System.out.println("Not Vowel");
         }
     }
-}
+} 
