@@ -1,0 +1,1 @@
+create table emp_info ( id int, name varchar(60))
