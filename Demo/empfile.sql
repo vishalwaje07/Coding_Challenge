@@ -1,1 +1,1 @@
-create table emp_info ( id int, name varchar(60))
+insert into emp_info values(1,'pavan')
