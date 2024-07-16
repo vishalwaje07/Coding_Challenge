@@ -11,6 +11,10 @@ public class QuestionWrapper {
 	private String option2;
 	private String option3;
 	private String option4;
+	public QuestionWrapper(Object id2, Object qustionTitle, Object option12, Object option22, Object option32,
+			Object option42) {
+		// TODO Auto-generated constructor stub
+	}
 	public Integer getId() {
 		return id;
 	}

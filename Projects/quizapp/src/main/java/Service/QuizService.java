@@ -1,7 +1,6 @@
 package Service;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import org.apache.el.stream.Optional;
@@ -42,8 +41,7 @@ public class QuizService {
 		List<QuestionWrapper> questionsForUser = new ArrayList<>();
 		for(Question q: questionsFromDB) {
 			QuestionWrapper qw = new QuestionWrapper(q.getId(), q.getQustionTitle(), q.getOption1(), q.getOption2(), q.getOption3(), q.getOption4());
-			List<Question> questionForUser;
-			questionForUser.addAll((Collection<? extends Question>) qw);
+			questionForUser.add(qw);
 		}
 		
 		
