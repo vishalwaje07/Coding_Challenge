@@ -18,7 +18,7 @@ public class App
         System.out.println( "My Program Started" );
         
         //Spring JDBC => JDBC Template
-        ApplicationConte xt context = new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
 
         
         StudentDao studentDao = context.getBean("studentDao", StudentDao.class);
