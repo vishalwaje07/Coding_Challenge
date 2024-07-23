@@ -14,16 +14,52 @@
   </head>
   <body>
    
+   <div class="container mt-5">
+   <h3 class="text-center">Registration Form</h3>
+   <form action="processform" method = "post">
    
-   <form>
    
    <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <input type="email" 
+    class="form-control" 
+    id="exampleInputEmail1" 
+    aria-describedby="emailHelp"
+    name="email"
+    >
   </div>
-   </form>
    
+   <div class="container mt-5">
+   <div class="form-group">
+    <label for="userName">
+    User Name</label>
+    <input type="text" 
+    class="form-control" 
+    id="userName" 
+    aria-describedby="emailHelp"
+    name = "userName"
+    >
+  </div>
+   
+   
+     <div class="container mt-5">
+   <div class="form-group">
+    <label for="userPassword">
+    User Password</label>
+    <input type="password" 
+    class="form-control" 
+    id="userPassword" 
+    aria-describedby="emailHelp"
+    name="password"
+    >
+  </div>
+ <div class = "container" text-center>
+ 
+  <button type="submit" class="btn btn-success">Sign Up </button>
+ </div>
+
+   </form>
+      </div>   
 
     <!-- Optional JavaScript; choose one of the two! -->
 
