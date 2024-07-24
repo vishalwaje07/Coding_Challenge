@@ -47,3 +47,4 @@ public class ContactController {
 	 * model.addAttribute("user",user); return "success" ; }
 	 */
 }
+
