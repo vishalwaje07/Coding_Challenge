@@ -7,7 +7,7 @@ public class Sum_Of_Numbers {
 
         // Implementing the list
         List<Integer> numbers = Array.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-
+ 
         // Using Optional.
         // Optinal is container object introduced in java 8.
         // Why Optional?
