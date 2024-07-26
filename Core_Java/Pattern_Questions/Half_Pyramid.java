@@ -10,7 +10,7 @@ public class Half_Pyramid {
         for (int i = 1; i <= number; i++) {
             // Inner Loop
             for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+                System.out.print(i);
             }
             System.out.println();
         }

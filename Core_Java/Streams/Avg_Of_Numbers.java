@@ -17,6 +17,7 @@ public class Avg_Of_Numbers {
         // using Streams to get the average of the numbers
         // Stream is a functional programming approach
         // It is used in functional interface
+        // Functional Interface is : Only one abstract method.
         // It present the sequence of elements from source.
         // It is newly added feature in java 8.
         double result = numbers.stream().mapToInt(e -> e).average().getAsDouble();
