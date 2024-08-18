@@ -33,8 +33,21 @@ public class MyController {
 	public String iterateHandlar(Model m) {
 		// Create a list, set collection...
 		List<String> names = List.of("Vishal", "Nikhil", "Sarthak", "Ashish");
-		m.addAttribute("names", names);		
+		m.addAttribute("names", names);
 		return "iterate";
+	}
+
+	// This is for Conditional Statements
+	@GetMapping("/condition")
+	public String conditionalHandlar(Model m) {
+		System.out.println("Conditional Handler Executed...");
+		m.addAttribute("isActive",false);
+		m.addAttribute("gender", "F");
+		
+		List<Integer> list = List.of(1);
+		m.addAttribute("mylist",list);
+		
+		return "condition";
 	}
 
 }
