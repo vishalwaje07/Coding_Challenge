@@ -44,6 +44,7 @@ public class MyController {
 		m.addAttribute("isActive",false);
 		m.addAttribute("gender", "F");
 		
+		// Trying with the list 
 		List<Integer> list = List.of(1);
 		m.addAttribute("mylist",list);
 		
