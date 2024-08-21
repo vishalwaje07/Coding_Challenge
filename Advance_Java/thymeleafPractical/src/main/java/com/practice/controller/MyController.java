@@ -50,5 +50,12 @@ public class MyController {
 		
 		return "condition";
 	}
+	
+	// Handeler for including fragements 
+	@GetMapping("/service")
+	public String serviceHandeler() {
+		// Processing logic.
+		return "service";
+	}
 
 }
