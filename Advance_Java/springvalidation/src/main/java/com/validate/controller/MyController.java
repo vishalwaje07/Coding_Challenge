@@ -26,7 +26,7 @@ public class MyController {
 	public String processForm(@Valid @ModelAttribute("loginData") LoginData loginData, BindingResult result ) {
 		if(result.hasErrors()) {
 			System.out.println(result);
-			return "form";
+			return "form"; 
 		}
 		
 		System.out.println(loginData);
