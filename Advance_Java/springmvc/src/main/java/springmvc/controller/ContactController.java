@@ -18,7 +18,7 @@ public class ContactController {
 		return "contact";
 	}
 	 @RequestMapping(path="/processform",method = RequestMethod.POST) 
-	 public String andleForm(@ModelAttribute User user,Model model) {
+	 public String handleForm(@ModelAttribute User user,Model model) {
 		 return "success" ;
 	 }
 	
