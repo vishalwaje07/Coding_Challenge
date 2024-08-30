@@ -3,14 +3,13 @@ package com.banking_domain.entities;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.antlr.v4.runtime.misc.NotNull;
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.NotEmpty;
 
 @Entity
 public class Customer {
@@ -19,12 +18,10 @@ public class Customer {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@NotNull
-	// Blanked- 
+	@NotEmpty
 	private String name;
 
-	@NotNull
-	// Not Empty
+	@NotEmpty
 	private String email;
 
 	private Long phone_Number;

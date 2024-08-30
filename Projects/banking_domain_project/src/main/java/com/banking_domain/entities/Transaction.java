@@ -3,14 +3,13 @@ package com.banking_domain.entities;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import org.antlr.v4.runtime.misc.NotNull;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.validation.constraints.NotEmpty;
 
 @Entity
 public class Transaction {
@@ -19,13 +18,13 @@ public class Transaction {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@NotNull
+	@NotEmpty
 	private String transation_Type;
 
-	@NotNull
+	@NotEmpty
 	private BigDecimal amount;
 
-	@NotNull
+	@NotEmpty
 	private LocalDateTime transationDateTime;
 
 	@ManyToOne
