@@ -1,27 +1,18 @@
 package com.banking_domain.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import java.util.List;
 
 import com.banking_domain.entities.Customer;
-import com.banking_domain.exception.ResourceNotFoundException;
-import com.banking_domain.repository.CustomerRepository;
 
-@Service
-public class CustomerService {
-	
-	@Autowired
-	private CustomerRepository customerRepository;
-	
-	
-	public Customer createCustomer(Customer customer) {
-		return customerRepository.save(customer);
-	}
+public interface CustomerService {
+	Customer createCustomer(Customer customer);
 
-	 public Customer getCustomerById(Long id) throws ResourceNotFoundException {
-		 
-		 return customerRepository.findById(id)
-         .orElseThrow(() -> new ResourceNotFoundException("Customer not found with id: " + id));
-	    }
-	
+	Customer getCustomerById(Long id);
+
+	List<Customer> getAllCustomers();
+
+	Customer updateCustomer(Long id, Customer customer);
+
+	void deleteCustomer(Long id);
+
 }
