@@ -1,16 +1,12 @@
-import java.util.Scanner;
-
-public class Reverse_String_ForLoop{
+public class Reverse_String_ForLoop {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter String");
-        String str = sc.nextLine();
-        String reversedString = "";
+        String original = "Vishal Waje";
+        String reversed = " ";
 
-        for (int i = str.length() - 1; i >= 0; i--) {
-            reversedString = reversedString + str.charAt(i);
+        for (int i = original.length() - 1; i >= 0; i--) {
+            reversed += original.charAt(i);
         }
-        System.out.println("Original String is : " + str);
-        System.out.println("Reveresed String is : " + reversedString);
+        System.out.println(reversed);
+
     }
 }
