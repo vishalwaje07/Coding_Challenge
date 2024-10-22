@@ -10,6 +10,6 @@ public class Reversed_String_Streams {
         String reveString = str.chars()
                             .mapToObj(c->String.valueOf((char)c))
                             .reduce((s1,s2)->s2+s1)
-                            .orElse(str)
+                            .orElse(str);
     }
 }
