@@ -1,20 +1,19 @@
 public class ArrayElement {
-    // Array element is present or not.
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5 };
-        int target = 7;
+        int[] numbers = { 1, 2, 3, 4, 5 };
+        int target = 9;
 
-        boolean flag = false;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == target) {
-                flag = true;
+        boolean found = false;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] == target) {
+                found = true;
                 break;
             }
         }
-        if (flag == true) {
-            System.out.println("Element Found");
+        if (found == true) {
+            System.out.println("Element is found");
         } else {
-            System.out.println("Element Not Found");
+            System.out.println("Element not found ");
         }
     }
 }
