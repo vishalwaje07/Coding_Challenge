@@ -5,7 +5,7 @@ public class MaxSubArray {
 
         for (int i = 1; i < nums.length; i++) {
             currentSum = Math.max(nums[i], currentSum + nums[i]);
-            maxSum = Math.max(maxSum, currentSum);
+            maxSum = Math.max(currentSum, maxSum);
         }
         return maxSum;
     }
