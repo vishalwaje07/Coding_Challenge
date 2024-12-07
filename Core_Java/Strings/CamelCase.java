@@ -1,19 +1,40 @@
 public class CamelCase {
 
-    public static String toCamelCase(String[] words) {
-        StringBuilder camelCase = new StringBuilder(words[0].toLowerCase());
-        for (int i = 1; i < words.length; i++) {
-            camelCase.append(words[i].substring(0, 1).toUpperCase())
-                    .append(words[i].substring(1).toLowerCase());
-        }
-        return camelCase.toString();
+    // public static String[] toCamelCase(String[] words) {
+    // String[] camelCaseWords = new String[words.length];
 
+    // for (int i = 0; i < words.length; i++) {
+    // camelCaseWords[i] = words[i].substring(0, 1).toUpperCase()
+    // + words[i].substring(1).toLowerCase();
+    // }
+    // return camelCaseWords;
+    // }
+    public static String[] toCamelCase(String[] words) {
+        String[] camelCaseWords = new String[words.length];
+
+        for (int i = 0; i < words.length; i++) {
+            camelCaseWords[i] = words[i].substring(0, 1).toUpperCase()
+                    + words[i].substring(1).toLowerCase();
+        }
+        return camelCaseWords;
     }
 
     public static void main(String[] args) {
+        // String[] words = { "java", "python", "kafka" };
+        // String[] camelCaseWords = toCamelCase(words);
+
+        // System.out.println("Camel Case Words");
+        // for (String word : camelCaseWords) {
+        // System.out.println(word);
+        // }
+
         String[] words = { "java", "python", "kafka" };
-        String camelCaseString = toCamelCase(words);
-        System.out.println(camelCaseString);
+        String[] camelCaseWords = toCamelCase(words);
+
+        System.out.println("Camel Case Words");
+        for (String word : camelCaseWords) {
+            System.out.println(word);
+        }
     }
 
 }
